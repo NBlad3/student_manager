@@ -11,7 +11,7 @@ app.config["SQLALCHEMY_DATABASE_URI"] = f"mysql://{os.getenv('USER')}:{os.getenv
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 db = SQLAlchemy(app)
-from app.models import Dog, Cat
+from app.models import Student
 
 with app.app_context():
     db.create_all()
